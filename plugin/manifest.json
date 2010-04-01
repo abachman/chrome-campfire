@@ -1,0 +1,14 @@
+{
+  "name": "Chrome Campfire",
+  "version": "0.1.0",
+  "description": "Campfire up in your browser of choice.",
+  "icons": { "48" : "assets/icon_48.png",
+             "128": "assets/icon_128.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://*.campfirenow.com/room/*"],
+      "css": ["chrome-campfire.css"],
+      "js": ["lib/jquery.min.js", "chrome-campfire.js"]
+    }
+  ]
+}
